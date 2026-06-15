@@ -1,37 +1,161 @@
-# FakeScope — AI Fake News Detector
+# 📰 FakeScope – AI-Powered Fake News Detection Platform
 
-FakeScope is a web application that uses AI to analyze news articles, headlines, and social media posts for signs of misinformation, propaganda, and fake news.
+## 🚀 Overview
 
-## Key Technologies
+FakeScope is an intelligent fact-checking platform that leverages Artificial Intelligence to analyze news articles and identify potential misinformation. The system evaluates content credibility, highlights suspicious patterns, and provides detailed reasoning to help users make informed decisions about the information they consume.
 
-- **Framework:** [TanStack Start](https://tanstack.com/start) (React, file-based routing)
-- **AI:** Anthropic Claude via [Netlify AI Gateway](https://docs.netlify.com/build/ai-gateway/overview/)
-- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
-- **Deployment:** [Netlify](https://netlify.com)
+With the rapid spread of fake news across digital platforms, FakeScope aims to promote media literacy and responsible information consumption through AI-assisted analysis.
 
-## Features
+---
 
-- Paste any article text and receive a structured credibility analysis
-- Verdict: **FAKE**, **REAL**, or **UNCERTAIN** with confidence score
-- Credibility score meter, red flags, and positive indicators
-- Session-based analysis history (last 8 analyses)
-- Example articles to demo the tool
+## ✨ Key Features
 
-## How to Run Locally
+### 🔍 AI-Powered News Analysis
+
+Analyze news articles, headlines, blog posts, and online content using advanced AI models.
+
+### 📊 Credibility Scoring
+
+Generate a credibility score that reflects the reliability and trustworthiness of the submitted content.
+
+### 🎯 Confidence Assessment
+
+Display AI confidence levels to indicate how certain the system is about its verdict.
+
+### 🚨 Red Flag Detection
+
+Identify warning signs such as:
+
+* Clickbait headlines
+* Sensational language
+* Unsupported claims
+* Emotional manipulation
+* Conspiracy-style narratives
+
+### ✅ Positive Credibility Indicators
+
+Recognize trustworthy characteristics including:
+
+* Verified sources
+* Research-backed information
+* Expert references
+* Balanced reporting
+
+### 📜 Detailed Explanations
+
+Provide transparent reasoning behind each analysis instead of giving only a final verdict.
+
+### 🕒 Analysis History
+
+Track previously analyzed content for comparison and review.
+
+---
+
+## 🏗️ Tech Stack
+
+### Frontend
+
+* React 19
+* TypeScript
+* Vite
+* TanStack Router
+
+### AI Integration
+
+* Anthropic Claude API
+
+### Deployment
+
+* Netlify
+
+### Version Control
+
+* Git & GitHub
+
+---
+
+## 📂 Project Structure
+
+```bash
+src/
+│
+├── routes/
+│   ├── index.tsx
+│   ├── api.analyze.ts
+│   └── __root.tsx
+│
+├── router.tsx
+├── styles.css
+│
+└── assets/
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### Clone Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/fake-news-detection-ai.git
+```
+
+### Install Dependencies
 
 ```bash
 npm install
-netlify dev
 ```
 
-The app runs on `http://localhost:8888`. Netlify AI Gateway environment variables are injected automatically in the Netlify dev environment — no API key setup required.
+### Start Development Server
 
-## Project Structure
+```bash
+npm run dev
+```
 
+### Build for Production
+
+```bash
+npm run build
 ```
-src/
-  routes/
-    index.tsx        # Main UI — article input, results display, history
-    api.analyze.ts   # POST /api/analyze — AI analysis endpoint
-  styles.css         # Global Tailwind styles
-```
+
+---
+
+## 🎯 Problem Statement
+
+The internet has become a primary source of information, but it is also flooded with misinformation and misleading content. Many users struggle to verify the authenticity of news before sharing it.
+
+FakeScope addresses this challenge by providing an AI-powered fact-checking assistant capable of evaluating content credibility and highlighting potential misinformation.
+
+---
+
+## 🌟 Future Enhancements
+
+* Multi-language fact-checking support
+* Source authenticity verification
+* Browser extension integration
+* Real-time news monitoring
+* Deepfake content detection
+* User authentication and saved reports
+* News source trust ranking system
+
+---
+
+## 👩‍💻 Author
+
+**Ibha Saini**
+
+Computer Science Student | AI & Machine Learning Enthusiast
+
+### Connect With Me
+
+GitHub: https://github.com/sainiibha-hub
+
+LinkedIn: https://www.linkedin.com/in/ibha-ibha-027188410
+
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
+
+Your support motivates further development and improvements.
